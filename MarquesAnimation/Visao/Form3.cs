@@ -82,9 +82,6 @@ namespace MarquesAnimation
                 }
             }
 
-            //Ativa o botão de exlusão.
-            /*btnRemover.Enabled = true;
-            btnAtualizar.Enabled = true;*/
         }
 
         public void LimparCampos()
@@ -124,18 +121,6 @@ namespace MarquesAnimation
 
             
         }
-
-        /*private void btnAtualizar_Click(object sender, EventArgs e)
-        {
-
-
-            Projetos projeto = new Projetos(idCliente, textBox1.Text, dateTimePicker1.Text, comboBox1.Text);
-
-            ControleProjeto cp = new ControleProjeto();
-            MessageBox.Show(cp.AtualizarProjeto(projeto), "Atualização cadastral", MessageBoxButtons.OK, MessageBoxIcon.Information);
-            LimparCampos();
-            PreencherListView();
-        }*/
 
         private void Form3_Load(object sender, EventArgs e)
         {

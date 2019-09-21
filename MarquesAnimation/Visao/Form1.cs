@@ -3,7 +3,9 @@ using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
+using System.IO;
 using System.Linq;
+using System.Reflection;
 using System.Runtime.InteropServices;
 using System.Text;
 using System.Threading.Tasks;
@@ -118,7 +120,7 @@ namespace MarquesAnimation
             panel1.Show();
             pictureBox1.Hide();
             AbrirFormNoPanel<Form2>();
-            label1.Text = "Controle de usuários";
+            label1.Text = "Controle de funcionários";
         }
 
         private void btnProjetos_Click(object sender, EventArgs e)
@@ -173,7 +175,7 @@ namespace MarquesAnimation
             {
                 imageNumber = 1;
             }
-            pictureBox1.ImageLocation = string.Format(@"C:\Users\CJ1850211\Downloads\marques\MarquesAnimation\MarquesAnimation\MarquesAnimation\bin\Debug\img\{0}.jpg", imageNumber);
+            pictureBox1.ImageLocation = string.Format(@"C:\Users\cassi\Downloads\marquesanimation-master\marquesanimation-master\MarquesAnimation\bin\Debug\img\{0}.jpg", imageNumber);
             imageNumber++;
         }
 
@@ -194,6 +196,11 @@ namespace MarquesAnimation
             pictureBox1.BringToFront();
             button1.BringToFront();
             label1.Text = "";
+        }
+
+        private void pictureBox1_Click_1(object sender, EventArgs e)
+        {
+
         }
     }
 }

@@ -87,7 +87,7 @@ namespace MarquesAnimation
             {
                 while (dr.Read())
                 {
-                    if (textBox1.Text == dr.GetString(0) && textBox2.Text == dr.GetString(1))
+                    if (textBox1.Text == dr.GetString(1) && textBox2.Text == dr.GetString(2))
                     {
                         this.Hide();
                         Form1 f1 = new Form1();

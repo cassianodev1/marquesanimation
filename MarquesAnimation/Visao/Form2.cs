@@ -27,41 +27,6 @@ namespace MarquesAnimation
             PreencherListView();
         }
 
-        public void AddUsuario()
-        {
-            /*
-            ListViewItem item = new ListViewItem(funcionario.Nome);
-            item.SubItems.Add(funcionario.CPF);
-            item.SubItems.Add(funcionario.Email);
-            item.SubItems.Add(funcionario.Telefone);
-            item.SubItems.Add(funcionario.Funcao);
-            listView1.Items.Add(item);*/
-
-            LimparCampos();
-        }
-
-      /*  public void DeletarListView()
-        {
-
-            SqlDataReader dr;
-            ControleFuncionario cf = new ControleFuncionario();
-            dr = cf.RetornarFuncionarios();
-
-            if (dr != null)
-            {
-                while (dr.Read())
-                {
-                    Funcionario funcionario = new Funcionario(dr.GetString(1), dr.GetString(2), dr.GetString(3), dr.GetString(4), dr.GetString(5));
-                    string mensagem = cf.DeletarFunc(funcionario);
-                    MessageBox.Show(mensagem);
-                }
-            }
-
-            foreach (ListViewItem eachItem in listView1.SelectedItems)
-            {
-                listView1.Items.Remove(eachItem);
-            }
-        }*/
         public void PreencherListView()
         {
             listView1.Items.Clear();
