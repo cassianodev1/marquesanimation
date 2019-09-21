@@ -1,0 +1,221 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{DECD4055-E1B2-4C1A-96D9-F241D5C072EE}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>MarquesAnimation</RootNamespace>
+    <AssemblyName>MarquesAnimation</AssemblyName>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Controle\ControleDistribuicao.cs" />
+    <Compile Include="Controle\ControleProjeto.cs" />
+    <Compile Include="Controle\ControleUsuario.cs" />
+    <Compile Include="Modelo\Usuario.cs" />
+    <Compile Include="Modelo\UsuarioDAO.cs" />
+    <Compile Include="Visao\Form6.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Visao\Form6.Designer.cs">
+      <DependentUpon>Form6.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MarquezitoAnimationDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>MarquezitoAnimationDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Modelo\Conexao.cs" />
+    <Compile Include="Controle\ControleFuncionario.cs" />
+    <Compile Include="Modelo\Distribuicao.cs" />
+    <Compile Include="Modelo\DistribuicaoDAO.cs" />
+    <Compile Include="Modelo\FuncionarioDAO.cs" />
+    <Compile Include="Visao\Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Visao\Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Visao\Form2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Visao\Form2.Designer.cs">
+      <DependentUpon>Form2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Visao\Form3.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Visao\Form3.Designer.cs">
+      <DependentUpon>Form3.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Visao\Form4.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Visao\Form4.Designer.cs">
+      <DependentUpon>Form4.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Visao\Form5.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Visao\Form5.Designer.cs">
+      <DependentUpon>Form5.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Modelo\Funcionario.cs" />
+    <Compile Include="Modelo\Projetos.cs" />
+    <Compile Include="Modelo\ProjetosDAO.cs" />
+    <EmbeddedResource Include="Visao\Form6.resx">
+      <DependentUpon>Form6.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Visao\Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Visao\Form2.resx">
+      <DependentUpon>Form2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Visao\Form3.resx">
+      <DependentUpon>Form3.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Visao\Form4.resx">
+      <DependentUpon>Form4.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Visao\Form5.resx">
+      <DependentUpon>Form5.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="MarquezitoAnimationDataSet.xsc">
+      <DependentUpon>MarquezitoAnimationDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="MarquezitoAnimationDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>MarquezitoAnimationDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="MarquezitoAnimationDataSet.xss">
+      <DependentUpon>MarquezitoAnimationDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\imgfunc.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\imgbuttonproj1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\imgbuttonproj2.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\imgbuttonproj3.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\imgdist.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\imglogomarques.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\giflogo.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\iconlalala.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\iconlalala1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\iconlululu.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\iconempregado.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\iconproject.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icondistribuicao.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\iconloja.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\iconfunc.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\iconuser.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\iconconfirmlogin.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\loginimg.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\underline.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\iconhome.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\iconhome1.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
