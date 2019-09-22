@@ -48,22 +48,24 @@
             this.maskedTextBox2 = new System.Windows.Forms.MaskedTextBox();
             this.button1 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
+            this.button3 = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // columnID
             // 
             this.columnID.Text = "ID";
+            this.columnID.Width = 33;
             // 
             // columnNome
             // 
             this.columnNome.Text = "Nome";
-            this.columnNome.Width = 178;
+            this.columnNome.Width = 122;
             // 
             // columnCPF
             // 
             this.columnCPF.Text = "CPF";
-            this.columnCPF.Width = 133;
+            this.columnCPF.Width = 88;
             // 
             // columnEMAIL
             // 
@@ -90,12 +92,11 @@
             this.columnEMAIL,
             this.columnTel,
             this.columnFuncao});
-            this.listView1.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.listView1.FullRowSelect = true;
-            this.listView1.Location = new System.Drawing.Point(0, 235);
+            this.listView1.Location = new System.Drawing.Point(395, 85);
             this.listView1.Name = "listView1";
             this.listView1.Scrollable = false;
-            this.listView1.Size = new System.Drawing.Size(735, 163);
+            this.listView1.Size = new System.Drawing.Size(301, 245);
             this.listView1.TabIndex = 0;
             this.listView1.UseCompatibleStateImageBehavior = false;
             this.listView1.View = System.Windows.Forms.View.Details;
@@ -105,9 +106,9 @@
             this.pictureBox1.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
             this.pictureBox1.BackgroundImage = global::MarquesAnimation.Properties.Resources.imgfunc;
             this.pictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.pictureBox1.Location = new System.Drawing.Point(71, 50);
+            this.pictureBox1.Location = new System.Drawing.Point(145, 12);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(104, 149);
+            this.pictureBox1.Size = new System.Drawing.Size(78, 111);
             this.pictureBox1.TabIndex = 1;
             this.pictureBox1.TabStop = false;
             this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click);
@@ -115,9 +116,9 @@
             // label1
             // 
             this.label1.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
-            this.label1.Location = new System.Drawing.Point(198, 33);
+            this.label1.Location = new System.Drawing.Point(67, 130);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(107, 26);
+            this.label1.Size = new System.Drawing.Size(107, 28);
             this.label1.TabIndex = 11;
             this.label1.Text = "Nome";
             this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -126,7 +127,7 @@
             // textBox1
             // 
             this.textBox1.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
-            this.textBox1.Location = new System.Drawing.Point(201, 59);
+            this.textBox1.Location = new System.Drawing.Point(70, 156);
             this.textBox1.Name = "textBox1";
             this.textBox1.Size = new System.Drawing.Size(107, 20);
             this.textBox1.TabIndex = 3;
@@ -135,7 +136,7 @@
             // label2
             // 
             this.label2.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
-            this.label2.Location = new System.Drawing.Point(342, 70);
+            this.label2.Location = new System.Drawing.Point(191, 131);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(107, 23);
             this.label2.TabIndex = 4;
@@ -146,7 +147,7 @@
             // label3
             // 
             this.label3.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
-            this.label3.Location = new System.Drawing.Point(342, 130);
+            this.label3.Location = new System.Drawing.Point(191, 191);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(107, 23);
             this.label3.TabIndex = 6;
@@ -157,7 +158,7 @@
             // textBox3
             // 
             this.textBox3.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
-            this.textBox3.Location = new System.Drawing.Point(345, 156);
+            this.textBox3.Location = new System.Drawing.Point(194, 217);
             this.textBox3.Name = "textBox3";
             this.textBox3.Size = new System.Drawing.Size(107, 20);
             this.textBox3.TabIndex = 6;
@@ -166,7 +167,7 @@
             // maskedTextBox1
             // 
             this.maskedTextBox1.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
-            this.maskedTextBox1.Location = new System.Drawing.Point(345, 95);
+            this.maskedTextBox1.Location = new System.Drawing.Point(194, 156);
             this.maskedTextBox1.Mask = "000.000.000-00";
             this.maskedTextBox1.Name = "maskedTextBox1";
             this.maskedTextBox1.Size = new System.Drawing.Size(107, 20);
@@ -176,9 +177,9 @@
             // label4
             // 
             this.label4.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
-            this.label4.Location = new System.Drawing.Point(201, 94);
+            this.label4.Location = new System.Drawing.Point(70, 191);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(107, 26);
+            this.label4.Size = new System.Drawing.Size(107, 28);
             this.label4.TabIndex = 9;
             this.label4.Text = "Função";
             this.label4.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -192,7 +193,7 @@
             "Animador",
             "Diretor",
             "Dublador"});
-            this.comboBox1.Location = new System.Drawing.Point(204, 118);
+            this.comboBox1.Location = new System.Drawing.Point(73, 215);
             this.comboBox1.Name = "comboBox1";
             this.comboBox1.Size = new System.Drawing.Size(104, 21);
             this.comboBox1.TabIndex = 4;
@@ -201,9 +202,9 @@
             // label5
             // 
             this.label5.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
-            this.label5.Location = new System.Drawing.Point(201, 153);
+            this.label5.Location = new System.Drawing.Point(70, 250);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(107, 23);
+            this.label5.Size = new System.Drawing.Size(107, 25);
             this.label5.TabIndex = 11;
             this.label5.Text = "Telefone";
             this.label5.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -212,7 +213,7 @@
             // maskedTextBox2
             // 
             this.maskedTextBox2.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
-            this.maskedTextBox2.Location = new System.Drawing.Point(204, 182);
+            this.maskedTextBox2.Location = new System.Drawing.Point(70, 278);
             this.maskedTextBox2.Mask = "00000-9999";
             this.maskedTextBox2.Name = "maskedTextBox2";
             this.maskedTextBox2.Size = new System.Drawing.Size(107, 20);
@@ -222,30 +223,51 @@
             // button1
             // 
             this.button1.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
-            this.button1.Location = new System.Drawing.Point(486, 94);
+            this.button1.BackColor = System.Drawing.Color.Aquamarine;
+            this.button1.FlatAppearance.BorderSize = 0;
+            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button1.Location = new System.Drawing.Point(194, 263);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(107, 35);
             this.button1.TabIndex = 8;
             this.button1.Text = "Confirmar";
-            this.button1.UseVisualStyleBackColor = true;
+            this.button1.UseVisualStyleBackColor = false;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // button2
             // 
             this.button2.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
-            this.button2.Location = new System.Drawing.Point(486, 135);
+            this.button2.BackColor = System.Drawing.Color.MediumAquamarine;
+            this.button2.FlatAppearance.BorderSize = 0;
+            this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button2.Location = new System.Drawing.Point(194, 304);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(107, 26);
             this.button2.TabIndex = 9;
             this.button2.Text = "Deletar";
-            this.button2.UseVisualStyleBackColor = true;
+            this.button2.UseVisualStyleBackColor = false;
             this.button2.Click += new System.EventHandler(this.button2_Click);
+            // 
+            // button3
+            // 
+            this.button3.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
+            this.button3.BackColor = System.Drawing.Color.MediumAquamarine;
+            this.button3.FlatAppearance.BorderSize = 0;
+            this.button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button3.Location = new System.Drawing.Point(70, 304);
+            this.button3.Name = "button3";
+            this.button3.Size = new System.Drawing.Size(107, 26);
+            this.button3.TabIndex = 12;
+            this.button3.Text = "Editar";
+            this.button3.UseVisualStyleBackColor = false;
+            this.button3.Click += new System.EventHandler(this.button3_Click);
             // 
             // Form2
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
             this.BackColor = System.Drawing.Color.LavenderBlush;
             this.ClientSize = new System.Drawing.Size(735, 398);
+            this.Controls.Add(this.button3);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.maskedTextBox2);
@@ -258,8 +280,8 @@
             this.Controls.Add(this.label2);
             this.Controls.Add(this.textBox1);
             this.Controls.Add(this.label1);
-            this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.listView1);
+            this.Controls.Add(this.pictureBox1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "Form2";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
@@ -293,5 +315,6 @@
         private System.Windows.Forms.MaskedTextBox maskedTextBox2;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Button button3;
     }
 }

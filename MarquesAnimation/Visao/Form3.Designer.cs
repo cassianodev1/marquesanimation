@@ -50,6 +50,7 @@
             this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
+            this.button3 = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // CategoryIDDataGridViewTextBoxColumn
@@ -236,11 +237,26 @@
             this.label1.TabIndex = 8;
             this.label1.Text = "Informe o nome do projeto:";
             // 
+            // button3
+            // 
+            this.button3.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
+            this.button3.BackColor = System.Drawing.Color.MediumAquamarine;
+            this.button3.FlatAppearance.BorderSize = 0;
+            this.button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button3.Location = new System.Drawing.Point(573, 324);
+            this.button3.Name = "button3";
+            this.button3.Size = new System.Drawing.Size(117, 26);
+            this.button3.TabIndex = 17;
+            this.button3.Text = "Editar";
+            this.button3.UseVisualStyleBackColor = false;
+            this.button3.Click += new System.EventHandler(this.button3_Click);
+            // 
             // Form3
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
             this.BackColor = System.Drawing.Color.LavenderBlush;
             this.ClientSize = new System.Drawing.Size(735, 398);
+            this.Controls.Add(this.button3);
             this.Controls.Add(this.btnRemover);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.listView1);
@@ -282,5 +298,6 @@
         private System.Windows.Forms.DateTimePicker dateTimePicker1;
         private System.Windows.Forms.TextBox textBox1;
         private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Button button3;
     }
 }

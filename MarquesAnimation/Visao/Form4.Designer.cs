@@ -45,6 +45,7 @@
             this.columnEMAIL = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.columnTel = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.button3 = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -54,7 +55,7 @@
             this.button2.FlatAppearance.BorderSize = 0;
             this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button2.Font = new System.Drawing.Font("Microsoft YaHei UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button2.Location = new System.Drawing.Point(384, 350);
+            this.button2.Location = new System.Drawing.Point(167, 343);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(77, 43);
             this.button2.TabIndex = 28;
@@ -68,9 +69,9 @@
             this.button1.FlatAppearance.BorderColor = System.Drawing.Color.LavenderBlush;
             this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button1.Font = new System.Drawing.Font("Microsoft YaHei UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.Location = new System.Drawing.Point(239, 350);
+            this.button1.Location = new System.Drawing.Point(32, 311);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(128, 43);
+            this.button1.Size = new System.Drawing.Size(128, 75);
             this.button1.TabIndex = 27;
             this.button1.Text = "Confirmar";
             this.button1.UseVisualStyleBackColor = false;
@@ -206,11 +207,26 @@
             this.pictureBox1.TabIndex = 16;
             this.pictureBox1.TabStop = false;
             // 
+            // button3
+            // 
+            this.button3.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
+            this.button3.BackColor = System.Drawing.Color.MediumAquamarine;
+            this.button3.FlatAppearance.BorderSize = 0;
+            this.button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button3.Location = new System.Drawing.Point(167, 311);
+            this.button3.Name = "button3";
+            this.button3.Size = new System.Drawing.Size(74, 26);
+            this.button3.TabIndex = 29;
+            this.button3.Text = "Editar";
+            this.button3.UseVisualStyleBackColor = false;
+            this.button3.Click += new System.EventHandler(this.button3_Click);
+            // 
             // Form4
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
             this.BackColor = System.Drawing.Color.LavenderBlush;
             this.ClientSize = new System.Drawing.Size(735, 398);
+            this.Controls.Add(this.button3);
             this.Controls.Add(this.listView1);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.button1);
@@ -253,5 +269,6 @@
         private System.Windows.Forms.ColumnHeader columnEMAIL;
         private System.Windows.Forms.ColumnHeader columnTel;
         private System.Windows.Forms.ColumnHeader columnID;
+        private System.Windows.Forms.Button button3;
     }
 }

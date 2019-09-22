@@ -74,18 +74,8 @@ namespace MarquesAnimation
 
         private void button2_Click(object sender, EventArgs e)
         {
-            SqlDataReader dr; //Objeto para armazenar o retorno do banco. 
+            idCliente = int.Parse(listView1.SelectedItems[0].SubItems[0].Text);
             ControleFuncionario cf = new ControleFuncionario();
-            dr = cf.RetornarFuncionarios(); //Chama o método responsável pela realização da consulta. 
-
-            if (dr != null) //Verifico 
-            {
-                while (dr.Read())
-                {
-                    idCliente = dr.GetInt32(0);
-                }
-            }
-
             cf.DeletarFunc(idCliente);
             LimparCampos();
             PreencherListView();
@@ -162,6 +152,27 @@ namespace MarquesAnimation
                     comboBox1.Text = dr.GetString(5);
                 }
             }
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            idCliente = int.Parse(listView1.SelectedItems[0].SubItems[0].Text);
+            ControleFuncionario cf = new ControleFuncionario();
+            SqlDataReader dr = cf.RetornarFuncionarios(idCliente);
+
+            if (dr != null)
+            {
+                while (dr.Read())
+                {
+                    textBox1.Text = dr.GetString(1);
+                    maskedTextBox1.Text = dr.GetString(2);
+                    textBox3.Text = dr.GetString(3);
+                    maskedTextBox2.Text = dr.GetString(4);
+                    comboBox1.Text = dr.GetString(5);
+                }
+            }
+            cf.DeletarFunc(idCliente);
+            PreencherListView();
         }
     }
 }

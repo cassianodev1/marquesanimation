@@ -18,7 +18,6 @@ namespace MarquesAnimation
         int idCliente;
         string CPFF;
         string FNome;
-        string NomeP;
         string CNPJD;
         string DNome;
         
@@ -198,5 +197,7 @@ namespace MarquesAnimation
             comboBox2.SelectedIndex = -1;
             comboBox3.SelectedIndex = -1;
         }
+
+        
     }
 }

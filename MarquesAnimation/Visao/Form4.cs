@@ -100,19 +100,8 @@ namespace MarquesAnimation
 
         private void button2_Click(object sender, EventArgs e)
         {
-            Distribuicao dist = new Distribuicao(textBox1.Text, maskedTextBox1.Text, maskedTextBox2.Text, textBox3.Text);
-            SqlDataReader dr; //Objeto para armazenar o retorno do banco. 
+            idCliente = int.Parse(listView1.SelectedItems[0].SubItems[0].Text);
             ControleDistribuicao cd = new ControleDistribuicao();
-            dr = cd.RetornarDistribuicao(); //Chama o método responsável pela realização da consulta. 
-
-            if (dr != null) //Verifico 
-            {
-                while (dr.Read())
-                {
-                    idCliente = dr.GetInt32(0);
-                }
-            }
-
             cd.DeletarDist(idCliente);
             LimparCampos();
             PreencherListView();
@@ -163,5 +152,24 @@ namespace MarquesAnimation
 
         }
 
+        private void button3_Click(object sender, EventArgs e)
+        {
+            idCliente = int.Parse(listView1.SelectedItems[0].SubItems[0].Text);
+            ControleDistribuicao cd = new ControleDistribuicao();
+            SqlDataReader dr = cd.RetornarDistribuicao(idCliente);
+
+            if (dr != null)
+            {
+                while (dr.Read())
+                {
+                    textBox1.Text = dr.GetString(1);
+                    maskedTextBox1.Text = dr.GetString(2);
+                    maskedTextBox2.Text = dr.GetString(3);
+                    textBox3.Text = dr.GetString(4);
+                }
+            }
+            cd.DeletarDist(idCliente);
+            PreencherListView();
+        }
     }
 }

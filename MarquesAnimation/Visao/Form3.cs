@@ -26,8 +26,7 @@ namespace MarquesAnimation
         private void Form1_Load(object sender, EventArgs e)
         {
             PreencherListView();
-            /*btnRemover.Enabled = false;
-            btnAtualizar.Enabled = false;*/
+
         }
 
         public void PreencherListView()
@@ -103,23 +102,11 @@ namespace MarquesAnimation
 
         private void btnRemover_Click_1(object sender, EventArgs e)
         {
-            SqlDataReader dr; //Objeto para armazenar o retorno do banco. 
+            idCliente = int.Parse(listView1.SelectedItems[0].SubItems[0].Text);
             ControleProjeto cp = new ControleProjeto();
-            dr = cp.RetornarProj(); //Chama o método responsável pela realização da consulta. 
-
-            if (dr != null) //Verifico 
-            {
-                while (dr.Read())
-                {
-                    idCliente = dr.GetInt32(0);
-                }
-            }
-
             cp.DeletarProj(idCliente);
-            LimparCampos();
             PreencherListView();
-
-            
+            LimparCampos();
         }
 
         private void Form3_Load(object sender, EventArgs e)
@@ -132,6 +119,13 @@ namespace MarquesAnimation
             PreencherListView();
         }
 
-
+        private void button3_Click(object sender, EventArgs e)
+        {
+            idCliente = int.Parse(listView1.SelectedItems[0].SubItems[0].Text);
+            ControleProjeto cp = new ControleProjeto();
+            cp.DeletarProj(idCliente);
+            PreencherListView();
+            LimparCampos();
+        }
     }
 }
